@@ -1,0 +1,91 @@
+﻿@model BDAvance.Models.OrderViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm("CheckOrders", "Home"))
+{
+    <h4>Check Customer's orders</h4>
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+    <div class="form-group ">
+        @Html.LabelFor(m => m.CustomerIdCheck, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.CustomerIdCheck, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group form-inline">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-success">Check&nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span></button>
+        </div>
+    </div>
+}
+
+@using (Html.BeginForm("NewOrder", "Home"))
+{
+    <h4>New order</h4>
+    @Html.ValidationSummary("", new {@class = "text-danger"})
+
+    <div class="form-group ">
+        @Html.LabelFor(m => m.CustomerId, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.CustomerId, new {@class = "form-control"})
+        </div>
+    </div>
+
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Abricot, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Abricot, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Banane, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Banane, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Cerise, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Cerise, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Fraise, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Fraise, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Kiwi, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Kiwi, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Framboise, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Framboise, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Groseille, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Groseille, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group ">
+        @Html.LabelFor(m => m.Prune, new {@class = "col-md-2 control-label"})
+        <div class="col-md-10 form-inline">
+            @Html.TextBoxFor(m => m.Prune, new {@class = "form-control", @Value = "0" })
+        </div>
+    </div>
+    <div class="form-group form-inline">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-success">Order&nbsp;&nbsp;<span class="glyphicon glyphicon-ok"></span></button>
+        </div>
+    </div>
+}

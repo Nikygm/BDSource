@@ -1,0 +1,9 @@
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\bin\Debug\CustomerDatabase.dacpac
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\bin\Debug\CustomerDatabase.dll
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\bin\Debug\CustomerDatabase.pdb
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\Model.xml
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\refactor.xml
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\postdeploy.sql
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\predeploy.sql
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\CustomerDatabase.dll
+C:\Users\gille\Desktop\BDAOUT\BDAvance\CustomerDatabase\obj\Debug\CustomerDatabase.pdb

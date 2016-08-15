@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "CheckOrders";
+}
+@model BDAvance.Models.CheckOrdersViewModel
+    
+@{
+    if (!Model.Orders.Any())
+    {
+        <div>
+            <h2>
+                This customer has no order.
+            </h2>
+        </div>
+    }
+    else
+    {
+        foreach (var data in Model.Orders)
+        {
+            <div>
+                <ul>
+                    <li>
+                        Order Id : @data.OrderId
+                    </li>
+                    <li>
+                        Customer Id : @data.CustomerId
+                    </li>
+                    <li>
+                        Abricot : @data.ProductQuantities.ElementAt(0).Quantity
+                    </li>
+                    <li>
+                        Banane : @data.ProductQuantities.ElementAt(1).Quantity
+                    </li>
+                    <li>
+                        Cerise : @data.ProductQuantities.ElementAt(2).Quantity
+                    </li>
+                    <li>
+                        Fraise : @data.ProductQuantities.ElementAt(3).Quantity
+                    </li>
+                    <li>
+                        Kiwi : @data.ProductQuantities.ElementAt(4).Quantity
+                    </li>
+                    <li>
+                        Framboise : @data.ProductQuantities.ElementAt(5).Quantity
+                    </li>
+                    <li>
+                        Groseille : @data.ProductQuantities.ElementAt(6).Quantity
+                    </li>
+                    <li>
+                        Prune : @data.ProductQuantities.ElementAt(7).Quantity<br/>
+                    &nbsp;</li>
+                </ul>
+            </div>
+            
+        }
+    }
+}
